@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Monoton&family=Rubik+Mono+One&display=swap');
+
+:root {
+	--primary: #0d47a1;
+	--primary-dark: #0d2b71;
+	--primary-light: #5472d3;
+	--primary-text: #ffffff;
+  }
+
+body {
+	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Monoton', cursive;
+	background-image: url("../public/bg.jpeg");
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+  }
+  .container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	vertical-align: center;
+  }
+  .player {
+	margin: 10px;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--primary-text);
+	color: var(--primary-text);
+	border-radius: 20px 0 0 10px;
+}
+  
+  .score {
+	padding: 1px;
+	font-size: small;
+	font-weight: bold;
+	background-color: var(--primary-dark);
+  }
+  
+  .action {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	color: var(--primary);
+  }
+
+  .round-btn {
+	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Monoton', cursive;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: none;
+	margin: 2px;
+	cursor: pointer;
+	background-color: var(--primary-dark);
+	color: var(--primary-text);
+  }
+  
+  .round-btn:hover {
+	background-color: var(--primary-light);
+  }
+  h1 {
+	font-size: 30px;
+	margin: 0;
+	background-color: var(--primary-dark);
+	color: var(--primary-text);
+	padding: 8px;
+  }
+  h2 {
+	color: greenyellow;
+  }
